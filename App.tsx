@@ -1,12 +1,13 @@
-import { SafeAreaView, StatusBar  } from 'react-native';
+import {  StatusBar, ScrollView } from 'react-native';
 import Cosmeticos from './src/pages/Cosmeticos';
 
 export default function App() {
   return (
-    <SafeAreaView>
+     <ScrollView>
       <StatusBar/>
       <Cosmeticos/>
-    </SafeAreaView>
-
+      </ScrollView>
+   
+     
 );
   }
