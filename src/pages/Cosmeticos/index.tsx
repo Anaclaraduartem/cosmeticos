@@ -6,6 +6,7 @@ import amoraa from "../../../assets/amoraa.png";
 import algodao from "../../../assets/algodao.png";
 import bodycereja from "../../../assets/bodycereja.png";
 import bodyamora from "../../../assets/bodyamora.png";
+import bodyalgodao from "../../../assets/bodyalgodao.png";
 
 const width = Dimensions.get("screen").width;
 
@@ -91,12 +92,30 @@ export default function Cosmeticos() {
         <Image style={estilos.imagembody} source={bodyamora} />
 
         
-        <Text style={estilos.preco}>R$ 41,90</Text>
+        <Text style={estilos.preco2}>R$ 41,90</Text>
         <Text style={estilos.descricao}>
-          Uma fragrância frutal que atrai e marca presença.Notas de cereja e
-          amora traz a sensação de bem estar,o 
-          Body Splash Desodorante Colônia de Tododia é um convite 
-          a vestir seu corpo com uma perfumação leve.
+       Se delicie aplicando borrifadas abundantes
+       nos punhos, pescoço, colo, atrás da orelha
+       e onde mais desejar.Vale até fazer
+       aquela nuvem de spray e se envolver
+       com esse cheirinho gostoso. Reaplique sempre
+       que quiser renovar essa sensação.
+        </Text>
+      </View>
+
+
+
+
+      <View>
+      <Text style={estilos.nomebody}> Algodão - 200 ml</Text>
+        <Image style={estilos.imagembody} source={bodyalgodao} />
+
+        
+        <Text style={estilos.preco3}>R$ 60,90</Text>
+        <Text style={estilos.descricao}>
+       Inspirada na combinação de notas surpreendentes traduzidas
+       em fragrâncias irresistivéis,Tododia é um convite para vestir seu corpo 
+       de frescor e leveza.
         </Text>
       </View>
     </>
@@ -211,5 +230,7 @@ const estilos = StyleSheet.create({
     width: 110,
     height: 110,
   },
+
+
 
 });
