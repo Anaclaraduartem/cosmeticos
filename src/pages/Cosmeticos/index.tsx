@@ -24,7 +24,10 @@ export default function Cosmeticos() {
 
       <View>
       <Text style={estilos.nomecereja}>Cereja e Avelã - 400ml</Text>
+
+      <View style={estilos.card2}>
         <Image style={estilos.imagemcereja} source={cereja} />
+        </View>
 
         
         <Text style={estilos.preco}>R$ 50,00</Text>
@@ -39,8 +42,10 @@ export default function Cosmeticos() {
       <View>
 
        <Text style={estilos.nomeamora}> Amora Vermelha e Jabuticaba - 400ml</Text>
-        <Image style={estilos.imagemamora} source={amoraa} />
 
+       <View style={estilos.card3}>
+        <Image style={estilos.imagemamora} source={amoraa} />
+        </View>
         
         <Text style={estilos.preco2}>R$ 45,00</Text>
         <Text style={estilos.descricao}>
@@ -54,8 +59,10 @@ export default function Cosmeticos() {
       <View>
 
        <Text style={estilos.nomealgodao}> Algodão - 400ml</Text>
-        <Image style={estilos.imagemalgodao} source={algodao} />
 
+       <View style={estilos.card}>
+        <Image style={estilos.imagemalgodao} source={algodao} />
+</View>
         
         <Text style={estilos.preco3}>R$ 65,90</Text>
         <Text style={estilos.descricao}>
@@ -74,8 +81,9 @@ export default function Cosmeticos() {
 
       <View>
       <Text style={estilos.nomebody}> Cereja e Avelã - 200 ml</Text>
+      <View style={estilos.card2}>
         <Image style={estilos.imagembody} source={bodycereja} />
-
+        </View>
         
         <Text style={estilos.preco}>R$ 69,00</Text>
         <Text style={estilos.descricao}>
@@ -89,8 +97,9 @@ export default function Cosmeticos() {
 
       <View>
       <Text style={estilos.nomebody}> Amora Vermelha e Jabuticaba - 200 ml</Text>
+      <View style={estilos.card3}>
         <Image style={estilos.imagembody} source={bodyamora} />
-
+</View>
         
         <Text style={estilos.preco2}>R$ 41,90</Text>
         <Text style={estilos.descricao}>
@@ -108,8 +117,9 @@ export default function Cosmeticos() {
 
       <View>
       <Text style={estilos.nomebody}> Algodão - 200 ml</Text>
+      <View style={estilos.card}>
         <Image style={estilos.imagembody} source={bodyalgodao} />
-
+        </View >
         
         <Text style={estilos.preco3}>R$ 60,90</Text>
         <Text style={estilos.descricao}>
@@ -140,6 +150,41 @@ const estilos = StyleSheet.create({
     padding: 16,
   },
 
+  card: {
+    height: 155,
+    width: "46%",
+    backgroundColor: "#D8BFD8",
+    marginLeft: "5%",
+    marginRight: "5%",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 5,
+  },
+
+  card2: {
+    height: 155,
+    width: "46%",
+    backgroundColor: "#dc143c",
+    marginLeft: "5%",
+    marginRight: "5%",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 5,
+  },
+
+  card3: {
+    height: 155,
+    width: "46%",
+    backgroundColor: "#dda0dd",
+    marginLeft: "5%",
+    marginRight: "5%",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 5,
+  },
+
+
+
   titulocremes: {
     fontSize: 24,
     fontWeight: "bold",
@@ -160,15 +205,16 @@ const estilos = StyleSheet.create({
   nomecereja: {
     fontSize: 16,
     lineHeight: 42,
-    marginLeft: 0,
+    marginLeft: 5,
     fontWeight: "bold",  
   },
 
   preco: {
     fontSize: 20,
     lineHeight: 42,
+    marginLeft: 5,
     color: "#dc143c",
-    marginTop: 2,
+    marginTop: 15,
   },
 
   
@@ -185,13 +231,14 @@ const estilos = StyleSheet.create({
   nomeamora: {
     fontSize: 16,
     lineHeight: 42,
-    marginLeft: 0,
+    marginLeft: 5,
     fontWeight: "bold",
   },
 
   preco2: {
     fontSize: 20,
     lineHeight: 42,
+    marginLeft: 5,
     color: "#ffc0cb",
     marginTop: 2,
   },
@@ -207,13 +254,14 @@ const estilos = StyleSheet.create({
   nomealgodao: {
     fontSize: 16,
     lineHeight: 42,
-    marginLeft: 0,
+    marginLeft: 5,
     fontWeight: "bold",
   },
 
   preco3: {
     fontSize: 20,
     lineHeight: 42,
+    marginLeft: 5,
     color: "#dda0dd",
     marginTop: 2,
   },
@@ -221,7 +269,7 @@ const estilos = StyleSheet.create({
   nomebody: {
     fontSize: 16,
     lineHeight: 42,
-    marginLeft: 0,
+    marginLeft: 5,
     fontWeight: "bold",  
   },
 
