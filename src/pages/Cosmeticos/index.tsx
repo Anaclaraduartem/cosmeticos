@@ -1,6 +1,7 @@
 import React from "react";
-import { StyleSheet, Image, Dimensions, Text, View } from "react-native";
-import logo from "../../../assets/logo.png";
+import { StyleSheet, Image, Text, View } from "react-native";
+import Logo from "./Components/Logo";
+
 import cereja from "../../../assets/cereja.jpg";
 import amoraa from "../../../assets/amoraa.png";
 import algodao from "../../../assets/algodao.png";
@@ -8,18 +9,17 @@ import bodycereja from "../../../assets/bodycereja.png";
 import bodyamora from "../../../assets/bodyamora.png";
 import bodyalgodao from "../../../assets/bodyalgodao.png";
 
-const width = Dimensions.get("screen").width;
+
 
 export default function Cosmeticos() {
   return (
+    
     <>
-      <Image source={logo} style={estilos.logo} />
-      <Text style={estilos.titulo}>Cremes Natura</Text>
-
+      
       <View>
-        <Text style={estilos.titulocremes}>Cremes: Todo Dia</Text>
+     
       </View>
-
+      <Logo/>
      
 
       <View>
@@ -74,9 +74,7 @@ export default function Cosmeticos() {
       </View>
 
 
-      <View>
-        <Text style={estilos.titulocremes}>Body Splash: Todo Dia</Text>
-      </View>
+      
 
 
       <View>
@@ -134,22 +132,7 @@ export default function Cosmeticos() {
 }
 
 const estilos = StyleSheet.create({
-  logo: {
-    width: "100%",
-    height: (578 / 768) * width,
-  },
-
-  titulo: {
-    fontSize: 28,
-    fontWeight: "bold",
-    lineHeight: 26,
-    width: "100%",
-    textAlign: "center",
-    color: "#db7093",
-    position: "absolute",
-    padding: 16,
-  },
-
+ 
   card: {
     height: 155,
     width: "46%",
@@ -185,14 +168,7 @@ const estilos = StyleSheet.create({
 
 
 
-  titulocremes: {
-    fontSize: 24,
-    fontWeight: "bold",
-    textAlign: "center",
-    lineHeight: 26,
-    color: "#000000",
-    marginTop: 25,
-  },
+  
 
  
 
