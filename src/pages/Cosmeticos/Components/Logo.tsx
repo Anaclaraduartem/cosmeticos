@@ -10,8 +10,6 @@ return (
     <>
      <Image source={logo} style={estilos.logo} />
       <Text style={estilos.titulo}>Cremes Natura</Text>
-      <Text style={estilos.titulocremes}>Cremes: Todo Dia</Text>
-      <Text style={estilos.titulocremes}>Body Splash: Todo Dia</Text>
     </>
 );
 
@@ -33,14 +31,7 @@ const estilos = StyleSheet.create({
     position: "absolute",
     padding: 16,
   },
-titulocremes: {
-  fontSize: 24,
-  fontWeight: "bold",
-  textAlign: "center",
-  lineHeight: 26,
-  color: "#000000",
-  marginTop: 25,
-},
+
 
 
 });
