@@ -2,12 +2,19 @@ import React from "react";
 import { Text, Image, View, StyleSheet } from "react-native";
 import cereja from "../../../../assets/cereja.jpg";
 
-export default function Detalhe() {
+type Props ={
+nome: string,
+nomecereja:string;
+
+}
+
+
+export default function Detalhe({nome, nomecereja}:Props) {
   return (
     <>
-      <Text style={estilos.titulocremes}>Cremes: Todo Dia</Text>
+      <Text style={estilos.titulocremes}>{nome}</Text>
       <View>
-        <Text style={estilos.nomecereja}>Cereja e Avelã - 400ml</Text>
+        <Text style={estilos.nomecereja}>{nomecereja}</Text>
 
         <Text style={estilos.preco}>R$ 50,00</Text>
         <Text style={estilos.descricao}>

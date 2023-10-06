@@ -5,11 +5,15 @@ import logo from "../../../../assets/logo.png";
 
 const width = Dimensions.get("screen").width;
 
-export default function Logo(){
+ type Props={
+titulo: string;
+ }
+
+export default function Logo({titulo}:Props){
 return (
     <>
      <Image source={logo} style={estilos.logo} />
-      <Text style={estilos.titulo}>Cremes Natura</Text>
+      <Text style={estilos.titulo}>{titulo}</Text>
     </>
 );
 
